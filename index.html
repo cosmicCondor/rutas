@@ -10,12 +10,27 @@
 <body>
     <div class="container">
         <h1>Nuestras Rutas Favoritas</h1>
+        <select id="province-select">
+            <option value="">--Selecciona una provincia--</option>
+            <option value="avila">Ávila</option>
+            <option value="cuenca">Cuenca</option>
+            <option value="ciudadReal">Ciudad Real</option>
+            <option value="extremadura">Extremadura</option>
+            <option value="guadalajara">Guadalajara</option>
+            <option value="leon">León</option>
+            <option value="salamanca">Salamanca</option>
+            <option value="segovia">Segovia</option>
+            <option value="soria">Soria</option>
+            <option value="teruel">Teruel</option>
+            <option value="toledo">Toledo</option>
+            <option value="valladolid">Valladolid</option>
+            <option value="zamora">Zamora</option>
+            <!-- Añade más provincias aquí según necesites -->
+        </select>
         <div id="routes-list">
-            <div class="route-item">
-                <a href="https://maps.app.goo.gl/1KVZXEpjGFbV7Nxa9">Ruta a Guadalupe</a>
-            </div>
-            <!-- Puedes añadir más rutas aquí siguiendo el mismo formato -->
+            <!-- Las rutas se mostrarán aquí dinámicamente -->
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

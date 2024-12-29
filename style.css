@@ -10,10 +10,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  position: relative; /* Añade esta línea */
+  position: relative;
 }
 
-/* Añade este bloque para crear una capa semitransparente sobre la imagen de fondo */
 body::before {
   content: '';
   position: absolute;
@@ -21,8 +20,8 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* Ajusta el último valor para cambiar la opacidad */
-  z-index: -1; /* Asegura que la capa esté detrás del contenido */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .container {
@@ -36,6 +35,23 @@ body::before {
 h1 {
   color: #ffcc00;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+#province-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#province-select option {
+  background-color: #333;
 }
 
 #routes-list {
@@ -48,6 +64,11 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.route-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .route-item a {
@@ -56,14 +77,21 @@ h1 {
   font-weight: bold;
   display: block;
   text-align: center;
+  transition: color 0.3s ease;
 }
 
 .route-item a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
 @media (max-width: 600px) {
   .container {
     width: 90%;
+  }
+  
+  #province-select,
+  .route-item {
+    font-size: 14px;
   }
 }

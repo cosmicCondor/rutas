@@ -32,7 +32,7 @@ const routes = {
     { name: "", link: "" }
   ],
   toledo: [
-    { name: "", link: "" }
+    { name: "Talavera de la Reina IDA", link: "https://maps.app.goo.gl/ycNcCasB2VQzvkbW8" },
   ],
   valladolid: [
     { name: "", link: "" }
